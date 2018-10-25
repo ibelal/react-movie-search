@@ -1,0 +1,228 @@
+.poster-people{
+  max-height: 286px;
+}
+.fadein{
+  transition: opacity 0.5s ;
+  opacity: 1;
+}
+.no_image{
+  width: 185px;
+  height: 278px; 
+  display:block;
+    margin:auto; 
+    background-color: #ccc;
+}
+
+.no_image_person{
+  width: 100%;
+  height: 303px; 
+  display:block;
+    margin:auto; 
+    background-color: #ccc;
+}
+.no_image i{
+  font-size: 80px;
+  position:relative;
+    top: calc(30%);
+    left:calc(23%);    
+}
+
+.no_image_person i{
+  font-size: 80px;
+  position:relative;
+    top: calc(30%);
+    left:calc(23%);    
+}
+
+.no_image_cast{
+  width: 155px;
+  height: 195px; 
+  display:block;
+    margin:auto; 
+    background-color: #ccc;
+}
+.no_image_cast i{
+  font-size: 80px;
+  position:relative;
+    top: calc(30%);
+    left:calc(23%);    
+}
+
+.clearfix{
+  clear: both;
+}
+
+.people-content{
+  padding: 10px !important;
+}
+
+@media screen and (min-width: 1200px){
+  .card-person{
+    height: 285px;
+  }
+  .card-movies{
+    height: 278px;
+  }
+  .card-title{
+    font-size: 10px;
+  }
+  .card-content{
+    padding: 15px !important;
+  }
+  .no_image_cast{
+    width: 191px;
+    height: 242px;     
+  }
+  
+}
+
+@media screen and (max-width: 1200px) and (min-width: 992px)  {
+  .card-person{
+    height: 145px;
+  }
+  .card-movies{
+    height: 278px;
+  }
+  .card-title{
+    font-size: 20px !important ;    
+  }
+  .card-content{
+    padding: 12px !important ;
+    overflow: hidden;
+    height: 198px;;
+  }  
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px)  {  
+  .card-person{
+    height: 285px;
+  }
+  .card-movies{
+    height: 237px;
+  }
+  .card-title{
+    font-size: 18px !important ;    
+  }
+  .card-content{
+    padding: 12px !important ;
+  }
+  .card-content p {
+    
+  }  
+  .tv-overview{
+    height: 126px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+  .card-person{
+    height: 240px;
+  }
+  .card-movies{
+    height: 278px;
+  }
+  .card-title{
+    font-size: 16px !important ;    
+  }
+  .card-content{
+    padding: 12px !important ;
+    overflow: hidden;
+    height: 198px;;
+  }  
+}
+
+@media screen and (min-width: 411px) and (max-width: 479px) {
+  .card-person{
+    height: 240px;
+  }
+  .custom_bg{
+    background:transparent !important;
+  }
+  .backdrops{
+    background-size: 100% auto !important;
+  }
+  .card-tv-img{
+    padding-top:50px !important ;
+    width: 1200px;
+    max-width: 33% !important;
+    position: absolute !important ;
+  }
+  .col-tv{
+    padding: 0 !important
+  }
+
+  .content-title h4{
+    padding-left: 130px !important ;
+    color: black !important;
+  }
+  .card-title-btn{
+    padding-left: 130px !important;
+  }
+  .card-content-text{   
+    padding: 110px 0 0px 5px !important;
+  }
+  .card-content-text p, .card-content-text h5, .card-content-text span, .card-content-text a{
+    color: black !important;    
+  }
+}
+
+@media screen and (min-width: 360px) and (max-width: 410px) {
+  .card-person{
+    height: 210px;
+  }
+}
+
+@media screen  and (max-width: 359px) {
+  .card-person{
+    height: 185px;
+  }
+}
+
+.backdrops{
+  width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.backdrops::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  display: block;
+  filter: opacity(0) grayscale(100%) contrast(130%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-position-x: 50%;
+  background-position-y: 50%;  
+  will-change: opacity;
+  transition: filter 1s;
+}
+.custom_bg{
+  background-image: radial-gradient(circle at 20% 50%, rgba(11.76%, 15.29%, 17.25%, 0.98) 0%, rgba(11.76%, 15.29%, 17.25%, 0.88) 100%);
+}
+
+.no-background{
+  background-color: transparent;
+}
+
+.paging-center{
+  margin: 0 auto;
+  text-align: center;
+}
+.cast-title{
+  overflow: hidden;
+}
+.cast-content{
+  padding: 12px !important;
+  min-height: 80px !important;
+  box-sizing: content-box !important;
+}
+
+.strong{
+  font-weight: bold;
+}
